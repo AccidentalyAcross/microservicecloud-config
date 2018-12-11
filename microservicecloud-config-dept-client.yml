@@ -22,7 +22,7 @@ spring:
       max-wait-millis: 200 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml 
-  type-aliases-package: com.atguigu.springcloud.entities 
+  type-aliases-package: com.front.springcloud.entities 
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml
 eureka:
@@ -34,8 +34,8 @@ eureka:
     prefer-ip-address: true
     
 info: 
-  app.name: atguigu-microservicecloud
-  company.name: www.atguigu.com
+  app.name: front-microservicecloud
+  company.name: www.baidu.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
 ---
@@ -58,7 +58,7 @@ spring:
       max-wait-millis: 200 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml 
-  type-aliases-package: com.atguigu.springcloud.entities 
+  type-aliases-package: com.front.springcloud.entities 
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml
 eureka:
@@ -66,11 +66,11 @@ eureka:
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka
   instance:
-    instance-id: dept-8001.com
+    instance-id: dept-8002.com
     prefer-ip-address: true
     
 info: 
-  app.name: atguigu-microservicecloud
-  company.name: www.atguigu.com
+  app.name: front-microservicecloud
+  company.name: www.baidu.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
