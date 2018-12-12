@@ -8,7 +8,7 @@ server:
 spring:
   profiles: dev         #开发环境
   application: 
-    name: microservicecloud-config-client-dev
+    name: microservicecloud-config-client
   rabbitmq: 
     host: 192.168.11.197
     port: 5672
@@ -29,7 +29,7 @@ server:
 spring:
   profiles: test         #测试环境
   application: 
-    name: microservicecloud-config-client-test
+    name: microservicecloud-config-client
   rabbitmq: 
     host: 192.168.11.197
     port: 5672
